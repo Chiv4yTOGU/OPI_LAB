@@ -1,0 +1,28 @@
+# MathLibrary/CMakeLists.txt
+
+cmake_minimum_required(VERSION 3.10)
+project(MathLibrary LANGUAGES CXX)
+
+# Собираем динамическую библиотеку из исходников
+add_library(MathLibrary SHARED
+    MatrixOperations.cpp
+)
+
+# Определяем макрос экспорта при сборке библиотеки
+target_compile_definitions(MathLibrary PRIVATE MATHLIBRARY_EXPORTS)
+
+# Заголовочный файл — публичный, чтобы приложение его видело
+target_include_directories(MathLibrary PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+# Устанавливаем библиотеку и заголовок в соответствующие папки
+install(TARGETS MathLibrary
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
+
+install(FILES MatrixOperations.h
+    DESTINATION include
+)

@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/VSProjects/OPI/Lab1/build/cmake_install.cmake",
+		"D:/VSProjects/OPI/Lab1/build/MathLibrary/cmake_install.cmake",
+		"D:/VSProjects/OPI/Lab1/build/ConsoleApp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
