@@ -9,3 +9,5 @@ std::string new_function() {
 void helper() {
     // вспомогательная функция
 }
+
+// Конец модуля
