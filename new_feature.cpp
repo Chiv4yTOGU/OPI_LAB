@@ -1,6 +1,6 @@
 #include <string>
 
-const std::string VERSION = "0.2";
+const std::string APP_VERSION = "0.2";
 
 std::string new_function() {
     return "Test branch";
@@ -15,7 +15,7 @@ int calculate(int a, int b) {
 }
 
 void print_version() {
-    std::cout << VERSION << std::endl;
+    std::cout << APP_VERSION << std::endl;
 }
 
 // Конец модуля
