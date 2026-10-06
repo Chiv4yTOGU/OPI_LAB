@@ -3,7 +3,7 @@
 const std::string APP_VERSION = "0.2";
 
 std::string new_function() {
-    return "Test branch";
+    return "Hello from master";
 }
 
 void helper() {
